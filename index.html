@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#30358a">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; form-action 'self'">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Fuerza75">
+<meta name="description" content="Seguimiento privado de entrenamiento: 13 semanas de fuerza, caminatas y progreso.">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+<link rel="icon" href="./icon-192.png" type="image/png">
+<link rel="stylesheet" href="./styles.css">
+<title>Fuerza75 · Entrenamiento</title>
+</head>
+<body>
+<header class="top"><div class="brand"><span class="logo">F</span><div><strong>Fuerza75</strong><span>Tu plan de 13 semanas</span></div></div><button type="button" class="iconbutton" id="settingsBtn" aria-label="Datos y privacidad">⚙</button></header>
+<div id="updateBanner" class="updatebanner" hidden><span>Hay una versión nueva disponible.</span><button type="button" class="btn tiny" id="updateBtn">Actualizar</button></div>
+<main id="app"></main>
+<nav class="bottom" aria-label="Secciones"><button data-page="home" class="active"><span>⌂</span>Hoy</button><button data-page="strength"><span>◆</span>Fuerza</button><button data-page="activity"><span>↗</span>Actividad</button><button data-page="progress"><span>▥</span>Progreso</button></nav>
+<dialog id="dialog"><div id="dialogContents"></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<input id="importFile" type="file" accept="application/json,.json" hidden>
+<script src="./app.js" defer></script>
+</body>
+</html>
